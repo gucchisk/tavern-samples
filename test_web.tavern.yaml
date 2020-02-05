@@ -1,0 +1,38 @@
+---
+test_name: yahoo
+marks:
+  - search
+  - japan
+stages:
+  - name: top
+    request:
+      url: https://www.yahoo.co.jp/
+      method: GET
+    response:
+      status_code: 200
+
+---
+test_name: google
+marks:
+  - search
+  - device
+stages:
+  - name: top
+    request:
+      url: https://www.google.co.jp
+      method: GET
+    response:
+      status_code: 200
+
+---
+test_name: apple
+marks:
+  - device
+stages:
+  - name: top
+    request:
+      url: https://www.apple.com
+      method: GET
+    response:
+      status_code: 200
+
